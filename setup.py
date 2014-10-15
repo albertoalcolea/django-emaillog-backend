@@ -7,7 +7,7 @@ def read(fname):
 setup(
     name = "django-emaillog-backend",
     version = "0.1",
-    url = '',
+    url = 'http://github.com/albertoalcolea/django-emaillog-backend',
     license = 'BSD',
     description = "Django email backend that writes messages to logger instead of sending them by SMTP.",
     long_description = read('README.md'),
