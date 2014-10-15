@@ -25,7 +25,7 @@ Usage
 
 To ensure that all emails sent using the send_mail function of Django are sent to a log should add the following to your ``settings.py`` file:
 
-    EMAIL_BACKEND = 'emaillog_backend.LoggerBackend'
+    EMAIL_BACKEND = 'django_emaillog_backend.backends.LoggerBackend'
 
 
 You can specify the logger to which the logs will be sent adding in your ``settings.py`` file
@@ -57,7 +57,7 @@ Add a custom logger in your ``settings.py`` file:
 
 In your ``settings.py`` file select the email backend and set the EMAIL_LOGGER_NAME constant:
 
-    EMAIL_BACKEND = 'django-emaillog-backend.backends.LoggerBackend'
+    EMAIL_BACKEND = 'django_emaillog_backend.backends.LoggerBackend'
 
     EMAIL_LOGGER_NAME = 'email_logger'
 
