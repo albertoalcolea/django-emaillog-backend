@@ -2,6 +2,7 @@
 
 [![Latest PyPI Version](https://img.shields.io/pypi/v/django-emaillog-backend.svg)](https://pypi.python.org/pypi/django-emaillog-backend)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/django-emaillog-backend.svg)](https://pypi.python.org/pypi/django-emaillog-backend)
+[![PyPI - Django Version](https://img.shields.io/pypi/djversions/django-emaillog-backend)](https://pypi.python.org/pypi/django-emaillog-backend)
 
 Simple email backend for Django that writes messages to logger instead of sending them to a SMTP server.
 
