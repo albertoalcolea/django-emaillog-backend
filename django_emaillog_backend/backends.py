@@ -22,7 +22,7 @@ class LoggerBackend(BaseEmailBackend):
 
     def write_message(self, message):
         msg = message.message()
-        log = 'New email received\n{0}'.format(msg)
+        log = 'Email sent\n{0}'.format(msg)
         self.logger.log(self.log_level, log)
 
     def send_messages(self, email_messages):
