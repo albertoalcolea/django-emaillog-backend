@@ -1,5 +1,11 @@
+build/
+dist/
+__pycache__
+*.egg-info/
 *.pyc
+*.swp
+*.egg
 *.sqlite3
 *.log
-tmp
-venv
+venv/
+.tox

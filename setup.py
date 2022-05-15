@@ -1,6 +1,5 @@
-import os
 import re
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 with open('django_emaillog_backend/__init__.py', 'r') as f:
@@ -21,34 +20,44 @@ setup(
     description="Django email backend that writes messages to logger instead of sending them by SMTP.",
     long_description=readme,
     long_description_content_type='text/markdown',
-    author = 'Alberto Alcolea',
-    author_email = 'me@albertoalcolea.com',
+    author='Alberto Alcolea',
+    author_email='me@albertoalcolea.com',
     url='http://github.com/albertoalcolea/django-emaillog-backend',
-    license='BSD',
+    project_urls={
+        'Source': 'http://github.com/albertoalcolea/django-emaillog-backend'
+    },
+    license='MIT',
+    keywords=[
+        'django mail',
+        'django log',
+        'django logger',
+        'django mail backend',
+        'django mail log backend',
+        'django mail logger backend',
+        'django plugin',
+    ],
     packages=['django_emaillog_backend'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
           'django>=1.2',
     ],
+    extras_require={
+        'dev': [
+            'flake8>=4.0.1',
+            'twine>=4.0.0',
+        ]
+    },
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Plugins',
         'Framework :: Django',
-        'Framework :: Django :: 1.4',
-        'Framework :: Django :: 1.5',
-        'Framework :: Django :: 1.6',
-        'Framework :: Django :: 1.7',
-        'Framework :: Django :: 1.8',
-        'Framework :: Django :: 1.9',
-        'Framework :: Django :: 1.10',
         'Framework :: Django :: 1.11',
-        'Framework :: Django :: 2.0',
-        'Framework :: Django :: 2.1',
         'Framework :: Django :: 2.2',
-        'Framework :: Django :: 3.0',
+        'Framework :: Django :: 3.2',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Programming Language :: Python',
@@ -60,5 +69,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
 )
